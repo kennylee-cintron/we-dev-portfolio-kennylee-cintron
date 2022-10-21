@@ -1,0 +1,34 @@
+@mixin sec-basic-style {
+  background-color: $bg-l-pink;
+  margin-top: $margin-between-sections;
+  border-radius: $border-radius;
+  box-shadow: $b-shadow;
+  padding: $padding;
+
+  div {
+    padding: $padding;
+  }
+  h2 {
+    font-size: $h2-size;
+    font-family: "Sansita", sans-serif;
+    color: $pink;
+    padding: 0 0 $padding;
+  }
+  p {
+    color: $charcoal;
+    font-size: $p-size;
+    font-family: $p-font-family;
+  }
+}
+
+@mixin button {
+  background-color: $pink;
+  color: $yellow;
+  font-size: 1.3rem;
+  font-family: $button-font-family;
+  border-radius: $border-radius;
+}
+
+@mixin dotted-border {
+  border: 10px dotted $pink;
+}

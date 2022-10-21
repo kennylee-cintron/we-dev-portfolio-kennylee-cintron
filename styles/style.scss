@@ -1,0 +1,196 @@
+@import "./abstracts";
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Sansita&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $turquoise;
+  margin: 1rem;
+}
+header {
+  background-color: $turquoise;
+  .navbar-toggler-icon:hover,
+  .nav-link:hover {
+    color: $pink;
+    font-size: 1.5rem;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+main {
+  div {
+    text-align: center;
+    img {
+      width: 300px;
+      @include dotted-border;
+      border-radius: 50%;
+    }
+  }
+  div {
+    h1 {
+      color: $white;
+      font-family: "Sansita", sans-serif;
+      font-size: 3rem;
+    }
+    h4 {
+      color: $gray-blue;
+    }
+    button {
+      @include button;
+      padding: $padding;
+      margin-top: $margin-inside-sections;
+    }
+    button:hover {
+      box-shadow: $b-shadow;
+      animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+    @keyframes heartbeat {
+      from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+      }
+      10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+      }
+      17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+      }
+      33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+      }
+      45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+      }
+    }
+  }
+}
+
+// My Portfolio
+
+section {
+  @include sec-basic-style;
+
+  .flex-container-pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    padding-top: 0;
+    .projects {
+      position: relative;
+      overflow: hidden;
+      border-radius: $border-radius;
+      .pink-circle {
+        width: 120px;
+        height: 120px;
+        border: 1px outset $black;
+        z-index: 1;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 1.8rem 0;
+        font-weight: 300;
+        line-height: 1.3;
+        box-shadow: $b-shadow;
+        @include button;
+        border-radius: 50%;
+        display: none;
+      }
+    }
+    .projects:hover .pink-circle {
+      cursor: pointer;
+      display: block;
+      animation: myAnim 0.2s ease-in-out 0s 1 normal both;
+    }
+    @keyframes myAnim {
+      0% {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: $border-radius;
+      filter: brightness(75%);
+      transition: transform 0.2s;
+    }
+    .projects:hover img {
+      animation: brightness-change-2x 0.2s linear 0s alternate both;
+      transform: scale(1.2);
+    }
+
+    @keyframes brightness-change-2x {
+      from {
+        filter: brightness(75%);
+      }
+      to {
+        filter: brightness(100%);
+      }
+    }
+  }
+}
+
+// About me
+
+#about-me {
+  @include sec-basic-style();
+}
+
+// Section Get in touch
+
+#in-touch {
+  @include sec-basic-style();
+  div {
+    @include dotted-border;
+
+    form {
+      margin: $margin-inside-sections;
+    }
+    input {
+      width: 100%;
+      height: 40px;
+      margin-bottom: $margin-inside-sections;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+    button {
+      background-color: $pink;
+      color: $yellow;
+      padding: $padding;
+      font-size: 1.3rem;
+      font-family: $button-font-family;
+      border-radius: $border-radius;
+      margin-top: $margin-inside-sections;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  nav {
+    .collapse {
+      justify-content: flex-end;
+    }
+  }
+}

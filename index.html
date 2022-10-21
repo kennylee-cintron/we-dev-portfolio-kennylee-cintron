@@ -4,8 +4,167 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kennylee's WebDeveloper Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Kennylee's WebDevFolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    
+    <link rel="icon" href="favicon.ico">
   </head>
-  <body></body>
+
+
+  <body>
+
+    <!-- -----------------HEADER -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid text-end">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./images/K-logo-w.png"
+              alt="logo from Kennylee"
+              width="80"
+              height="80"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Projects</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">My Skills</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ----------------MAIN/INTRODUCTION -->
+    <main>
+      <div>
+        <img
+          src="./images/kennylee-profile-pic.jpg"
+          alt="Profile picture of Kennylee"
+        />
+      </div>
+      <div>
+        <h1>Hi, I'm Kennylee, web developer</h1>
+        <h4>Based in Berlin, Germany.</h4>
+        <button>Get in touch!</button>
+      </div>
+    </main>
+
+    <!-- ----------MY PORTFOLIO---------------- -->
+    <section>
+      <div id="bg-change">
+        <h2>My Portfolio</h2>
+        <p>
+          A selection of recent projects curated by myself. Some of this have
+          been done during my certification.
+        </p>
+      </div>
+      <div class="flex-container-pro">
+        <div class="projects"><div class="pink-circle">View<br>project</div>
+          <img
+            src="./images/screeshot-first-website-kmcs.jpg"
+            alt="Screenshot of my website"
+          />
+        </div>
+        <div class="projects"><div class="pink-circle">view<br>project</div><img
+          src="./images/screeshot-first-website-kmcs.jpg"
+          alt="Screenshot of my website"
+        /></div>
+        <div class="projects"><div class="pink-circle">view<br>project</div><img
+          src="./images/screeshot-first-website-kmcs.jpg"
+          alt="Screenshot of my website"
+        /></div>
+        <div class="projects"><div class="pink-circle">view<br>project</div><img
+          src="./images/screeshot-first-website-kmcs.jpg"
+          alt="Screenshot of my website"
+        /></div>
+       
+    </section>
+
+    <!-- -------MY SKILLS-------- -->
+<section>
+  <div>
+    <h2>My skills</h2>
+    <p>I created websites that are easy to use following the best practices. My specialty is building inclusive softwares that operate with accessibility, core in the UX and UI and. and main  front-end development.</p>
+    <p>User friendly websites avoiding frustration.</p>
+    <p>clean cut codes concise and precise</p>
+    <p>responsiveness ensure that they can be accurately and appropriately displayed across screens of different sizes. Make sure you're taking different devices into consideration to give your apps the biggest possible audience.</p>
+    <p>I keep track on the new technologies </p>
+  </div>
+</section>
+
+    <!-- ---------ABOUT ME--------------- -->
+    <section id="about-me">
+      <div>
+        <h2>About me</h2>
+        <p>
+          I am a full stack developer with a rich range of projects experiences.
+        </p>
+        <p>
+          In addition, I have been trained in the technical...
+        </p>
+        <p>
+          I have an passion for animations. Very good at researching.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias numquam amet provident debitis dicta accusamus dignissimos id enim omnis.</p>
+        <p>
+         Currently I work remotely and I am open for new job opportunities.
+        </p>
+      </div>
+    </section>
+
+    <!-------GET IN TOUCH------------------ -->
+    <Section id="in-touch">
+      <div>
+      <h2>Get in touch</h2>
+  <form action="">
+
+    <input
+      type="text"
+      id="fullname"
+      placeholder=" Name"
+      minlength="1"
+    />
+    <input type="text" placeholder=" Email" minlength="5" required />
+    <input type="text" placeholder=" Subject" minlength="5" />
+   
+    <textarea
+      id="question"
+      placeholder=" Send me a message!"
+      minlength="1"
+    ></textarea><br>
+    <button class="submit-btn">Send</button>
+  </form>
+</div>
+    </Section>
+    <footer>Designed and Developed by <span>Kennylee Cintrón</span></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
