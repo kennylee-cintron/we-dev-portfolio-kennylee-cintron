@@ -3,7 +3,7 @@
   margin-top: $margin-between-sections;
   border-radius: $border-radius;
   box-shadow: $b-shadow;
-  padding: $padding;
+  padding: $padding-2;
 
   div {
     padding: $padding;
@@ -31,4 +31,28 @@
 
 @mixin dotted-border {
   border: 10px dotted $pink;
+}
+@mixin nav-bar {
+  .nav-link {
+    color: $white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 0.8rem;
+  }
+  .nav-link:hover {
+    color: $pink;
+  }
+}
+
+@mixin icons {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+
+  i {
+    color: $dark-turquoise;
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
 }

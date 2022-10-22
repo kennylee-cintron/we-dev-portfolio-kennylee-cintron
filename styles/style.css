@@ -13,8 +13,16 @@ body {
 header {
   background-color: #46ac92;
 }
-header .navbar-toggler-icon:hover,
+header .nav-link {
+  color: #f7f9fd;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 0.8rem;
+}
 header .nav-link:hover {
+  color: #dc5d96;
+}
+header button:hover {
   color: #dc5d96;
   font-size: 1.5rem;
 }
@@ -22,6 +30,13 @@ header img:hover {
   transform: scale(1.1);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
 main div {
   text-align: center;
 }
@@ -34,6 +49,7 @@ main div h1 {
   color: #f7f9fd;
   font-family: "Sansita", sans-serif;
   font-size: 3rem;
+  margin: 1.5rem;
 }
 main div h4 {
   color: #65738a;
@@ -46,6 +62,7 @@ main div button {
   border-radius: 1rem;
   padding: 1rem;
   margin-top: 1.5rem;
+  margin-bottom: 9rem;
 }
 main div button:hover {
   box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.78);
@@ -108,41 +125,53 @@ main div button:hover {
             animation-timing-function: ease-out;
   }
 }
+main .icon {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+main .icon i {
+  color: #2d6877;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
 
-section {
+#portfolio {
   background-color: #faeee7;
-  margin-top: 10rem;
+  margin-top: 7rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.78);
+  padding: 2rem;
+  margin-top: 0;
+}
+#portfolio div {
   padding: 1rem;
 }
-section div {
-  padding: 1rem;
-}
-section h2 {
+#portfolio h2 {
   font-size: 2.3rem;
   font-family: "Sansita", sans-serif;
   color: #dc5d96;
   padding: 0 0 1rem;
 }
-section p {
+#portfolio p {
   color: rgb(92, 81, 81);
   font-size: 1.2rem;
   font-family: "Inter", sans-serif;
 }
-section .flex-container-pro {
+#portfolio .flex-container-pro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0.2rem;
   padding-top: 0;
 }
-section .flex-container-pro .projects {
+#portfolio .flex-container-pro .projects {
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
 }
-section .flex-container-pro .projects .pink-circle {
+#portfolio .flex-container-pro .projects .pink-circle {
   width: 120px;
   height: 120px;
   border: 1px outset black;
@@ -166,7 +195,7 @@ section .flex-container-pro .projects .pink-circle {
   border-radius: 50%;
   display: none;
 }
-section .flex-container-pro .projects:hover .pink-circle {
+#portfolio .flex-container-pro .projects:hover .pink-circle {
   cursor: pointer;
   display: block;
   -webkit-animation: myAnim 0.2s ease-in-out 0s 1 normal both;
@@ -192,13 +221,13 @@ section .flex-container-pro .projects:hover .pink-circle {
     transform: scale(1);
   }
 }
-section .flex-container-pro img {
+#portfolio .flex-container-pro img {
   width: 100%;
   border-radius: 1rem;
   filter: brightness(75%);
   transition: transform 0.2s;
 }
-section .flex-container-pro .projects:hover img {
+#portfolio .flex-container-pro .projects:hover img {
   -webkit-animation: brightness-change-2x 0.2s linear 0s alternate both;
           animation: brightness-change-2x 0.2s linear 0s alternate both;
   transform: scale(1.2);
@@ -220,12 +249,45 @@ section .flex-container-pro .projects:hover img {
   }
 }
 
-#about-me {
+#my-skills {
   background-color: #faeee7;
-  margin-top: 10rem;
+  margin-top: 7rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.78);
+  padding: 2rem;
+}
+#my-skills div {
   padding: 1rem;
+}
+#my-skills h2 {
+  font-size: 2.3rem;
+  font-family: "Sansita", sans-serif;
+  color: #dc5d96;
+  padding: 0 0 1rem;
+}
+#my-skills p {
+  color: rgb(92, 81, 81);
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+}
+#my-skills .icon {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+#my-skills .icon i {
+  color: #2d6877;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+#about-me {
+  background-color: #faeee7;
+  margin-top: 7rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.78);
+  padding: 2rem;
 }
 #about-me div {
   padding: 1rem;
@@ -244,10 +306,10 @@ section .flex-container-pro .projects:hover img {
 
 #in-touch {
   background-color: #faeee7;
-  margin-top: 10rem;
+  margin-top: 7rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.78);
-  padding: 1rem;
+  padding: 2rem;
 }
 #in-touch div {
   padding: 1rem;
@@ -290,8 +352,35 @@ section .flex-container-pro .projects:hover img {
   margin: auto;
 }
 
-@media screen and (min-width: 768px) {
+footer {
+  margin-top: 7rem;
+}
+footer p {
+  text-align: center;
+  color: #65738a;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
   nav .collapse {
     justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mq-large {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .mq-large img {
+    width: 400px;
+  }
+  .mq-large .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mq-large .center button {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */

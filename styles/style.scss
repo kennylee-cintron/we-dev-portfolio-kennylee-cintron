@@ -11,18 +11,30 @@ body {
   background-color: $turquoise;
   margin: 1rem;
 }
+
+// HEADER
+
 header {
   background-color: $turquoise;
-  .navbar-toggler-icon:hover,
-  .nav-link:hover {
+  @include nav-bar;
+  button:hover {
     color: $pink;
     font-size: 1.5rem;
   }
+
   img:hover {
     transform: scale(1.1);
   }
 }
+
+// MAIN
+
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
   div {
     text-align: center;
     img {
@@ -36,6 +48,7 @@ main {
       color: $white;
       font-family: "Sansita", sans-serif;
       font-size: 3rem;
+      margin: $margin-inside-sections;
     }
     h4 {
       color: $gray-blue;
@@ -44,6 +57,7 @@ main {
       @include button;
       padding: $padding;
       margin-top: $margin-inside-sections;
+      margin-bottom: 9rem;
     }
     button:hover {
       box-shadow: $b-shadow;
@@ -73,12 +87,16 @@ main {
       }
     }
   }
+  .icon {
+    @include icons;
+  }
 }
 
 // My Portfolio
 
-section {
+#portfolio {
   @include sec-basic-style;
+  margin-top: 0;
 
   .flex-container-pro {
     display: flex;
@@ -148,6 +166,13 @@ section {
     }
   }
 }
+//  MY SKILLS
+#my-skills {
+  @include sec-basic-style;
+  .icon {
+    @include icons;
+  }
+}
 
 // About me
 
@@ -187,10 +212,42 @@ section {
     }
   }
 }
-@media screen and (min-width: 768px) {
+
+//FOOTER
+
+footer {
+  margin-top: $margin-between-sections;
+
+  p {
+    text-align: center;
+    color: $gray-blue;
+    margin-top: $margin-inside-sections;
+  }
+}
+
+// MEDIA QUERIES
+@media only screen and (min-width: 768px) {
   nav {
     .collapse {
       justify-content: flex-end;
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mq-large {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    img {
+      width: 400px;
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button {
+        margin-bottom: 0;
+      }
     }
   }
 }

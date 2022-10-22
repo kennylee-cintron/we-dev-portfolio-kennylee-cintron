@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./styles/style.css" />
-    
+
     <link rel="icon" href="favicon.ico">
   </head>
 
@@ -28,7 +28,7 @@
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid text-end">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="#top"
             ><img
               src="./images/K-logo-w.png"
               alt="logo from Kennylee"
@@ -48,10 +48,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Projects</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">My Skills</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" aria-current="page" href="#portfolio">Projects</a>
+              <a class="nav-link" href="#about-me">About me</a>
+              <a class="nav-link" href="#my-skills">My Skills</a>
+              <a class="nav-link" href="#in-touch">Contact</a>
             </div>
           </div>
         </div>
@@ -59,23 +59,33 @@
     </header>
 
     <!-- ----------------MAIN/INTRODUCTION -->
-    <main>
+    <main id="top">
+      <div class="mq-large">
       <div>
         <img
           src="./images/kennylee-profile-pic.jpg"
           alt="Profile picture of Kennylee"
         />
       </div>
-      <div>
+      <div class="center">
         <h1>Hi, I'm Kennylee, web developer</h1>
         <h4>Based in Berlin, Germany.</h4>
-        <button>Get in touch!</button>
+        <a href="#in-touch"><button>Get in touch!</button></a>
+      </div>
+    </div>
+      <div class="icon">
+        <a target="_blank" href="https://github.com/kennylee-cintron">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a target="_blank" href="https://de.linkedin.com/in/kennylee-cintron-6584a661">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
       </div>
     </main>
 
     <!-- ----------MY PORTFOLIO---------------- -->
-    <section>
-      <div id="bg-change">
+    <section id="portfolio">
+      <div >
         <h2>My Portfolio</h2>
         <p>
           A selection of recent projects curated by myself. Some of this have
@@ -83,29 +93,51 @@
         </p>
       </div>
       <div class="flex-container-pro">
-        <div class="projects"><div class="pink-circle">View<br>project</div>
+    <!-- project 1 -->
+    <a target="_blank"  href="https://kennylee-cintron.github.io/webfolio-of-painter/">
+      <div class="projects">
+        <div class="pink-circle">View<br>project</div>
           <img
-            src="./images/screeshot-first-website-kmcs.jpg"
-            alt="Screenshot of my website"
+            src="./images/screenshot-web-painter-porfolio.jpg"
+            alt="Screenshot of a portfolio website of a painter"
           />
-        </div>
-        <div class="projects"><div class="pink-circle">view<br>project</div><img
-          src="./images/screeshot-first-website-kmcs.jpg"
-          alt="Screenshot of my website"
-        /></div>
-        <div class="projects"><div class="pink-circle">view<br>project</div><img
-          src="./images/screeshot-first-website-kmcs.jpg"
-          alt="Screenshot of my website"
-        /></div>
-        <div class="projects"><div class="pink-circle">view<br>project</div><img
-          src="./images/screeshot-first-website-kmcs.jpg"
-          alt="Screenshot of my website"
-        /></div>
+      </div>
+    </a>
+    <!-- project 2 -->
+        <a target="_blank"  href="https://kennylee-cintron.github.io/grid-layout/">
+          <div class="projects">
+            <div class="pink-circle">view<br>project</div>
+            <img
+              src="./images/screenshot-web-grid-layout.jpg"
+              alt="Screenshot of an website with grid layout."
+            />
+          </div>
+        </a>
+    <!-- project 3 -->
+        <a target="_blank"  class="projects"href="https://kennylee-cintron.github.io/unfold-message-interactions/">
+          <div>
+            <div class="pink-circle">view<br>project</div>
+            <img
+              src="./images/screenshot-web-animation.jpg"
+              alt="Screenshot of an website with animations."
+            />
+          </div>
+        </a>
+    <!-- project 4 -->
+        <a target="_blank"  href="https://kennylee-cintron.github.io/desktop-speaker-shop/">
+          <div class="projects">
+            <div class="pink-circle">view<br>project</div>
+            <img
+              src="./images/screenshot-web-speaker-shop.jpg"
+              alt="Screenshot of an speaker online shop."
+            />
+          </div>
+        </a>
        
     </section>
 
     <!-- -------MY SKILLS-------- -->
-<section>
+<section id="my-skills">
   <div>
     <h2>My skills</h2>
     <p>I created websites that are easy to use following the best practices. My specialty is building inclusive softwares that operate with accessibility, core in the UX and UI and. and main  front-end development.</p>
@@ -113,6 +145,12 @@
     <p>clean cut codes concise and precise</p>
     <p>responsiveness ensure that they can be accurately and appropriately displayed across screens of different sizes. Make sure you're taking different devices into consideration to give your apps the biggest possible audience.</p>
     <p>I keep track on the new technologies </p>
+    <div class="icon">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-bootstrap"></i>
+      <i class="fa-brands fa-sass"></i>
+    </div>
   </div>
 </section>
 
@@ -160,7 +198,11 @@
   </form>
 </div>
     </Section>
-    <footer>Designed and Developed by <span>Kennylee Cintrón</span></footer>
+    <!-- FOOTER -->
+    <footer>
+      <p>&#169; 2022 Kennylee Cintrón
+      </p>
+  </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
