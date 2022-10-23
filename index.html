@@ -61,18 +61,20 @@
     <!-- ----------------MAIN/INTRODUCTION -->
     <main id="top">
       <div class="mq-large">
-      <div>
-        <img
+        <div class="fithy-fifthy">
+          <img
           src="./images/kennylee-profile-pic.jpg"
           alt="Profile picture of Kennylee"
-        />
+          />
+        </div>
+        <div class="center">
+          <h1>Hi, I'm Kennylee, web developer&#33;</h1>
+          <h4>Based in Berlin, Germany.</h4>
+          <a href="#in-touch">
+            <button>Get in touch!</button>
+          </a>
+        </div>
       </div>
-      <div class="center">
-        <h1>Hi, I'm Kennylee, web developer</h1>
-        <h4>Based in Berlin, Germany.</h4>
-        <a href="#in-touch"><button>Get in touch!</button></a>
-      </div>
-    </div>
       <div class="icon">
         <a target="_blank" href="https://github.com/kennylee-cintron">
           <i class="fa-brands fa-github"></i>
@@ -88,24 +90,25 @@
       <div >
         <h2>My Portfolio</h2>
         <p>
-          A selection of recent projects curated by myself. Some of this have
+          A selection of recent projects. Some of this have
           been done during my certification.
         </p>
       </div>
-      <div class="flex-container-pro">
+      <div class="container-pro">
     <!-- project 1 -->
-    <a target="_blank"  href="https://kennylee-cintron.github.io/webfolio-of-painter/">
-      <div class="projects">
-        <div class="pink-circle">View<br>project</div>
+       <a class="projects" target="_blank"  href="https://kennylee-cintron.github.io/webfolio-of-painter/">
+        <div>
+          <div class="pink-circle">View<br>project
+          </div>
           <img
             src="./images/screenshot-web-painter-porfolio.jpg"
             alt="Screenshot of a portfolio website of a painter"
           />
-      </div>
-    </a>
+        </div>
+       </a>
     <!-- project 2 -->
-        <a target="_blank"  href="https://kennylee-cintron.github.io/grid-layout/">
-          <div class="projects">
+        <a class="projects" target="_blank"  href="https://kennylee-cintron.github.io/grid-layout/">
+          <div>
             <div class="pink-circle">view<br>project</div>
             <img
               src="./images/screenshot-web-grid-layout.jpg"
@@ -114,7 +117,7 @@
           </div>
         </a>
     <!-- project 3 -->
-        <a target="_blank"  class="projects"href="https://kennylee-cintron.github.io/unfold-message-interactions/">
+        <a class="projects" target="_blank"   href="https://kennylee-cintron.github.io/unfold-message-interactions/">
           <div>
             <div class="pink-circle">view<br>project</div>
             <img
@@ -124,8 +127,8 @@
           </div>
         </a>
     <!-- project 4 -->
-        <a target="_blank"  href="https://kennylee-cintron.github.io/desktop-speaker-shop/">
-          <div class="projects">
+        <a class="projects" target="_blank"  href="https://kennylee-cintron.github.io/desktop-speaker-shop/">
+          <div>
             <div class="pink-circle">view<br>project</div>
             <img
               src="./images/screenshot-web-speaker-shop.jpg"
@@ -159,44 +162,53 @@
       <div>
         <h2>About me</h2>
         <p>
-          I am a full stack developer with a rich range of projects experiences.
+          I am currently being trained to be in less than a year a full stack web developer.
+        </p>
+        <p>I find this career a perfect match since a consider myself creative, logical and patience person. This basics qualities supports me when I face challenges during coding. 
         </p>
         <p>
-          In addition, I have been trained in the technical...
+          In addition to being trained in the technical field, I am also attending to soft skills seminars. To become an all-round team-player in your company. 
         </p>
         <p>
-          I have an passion for animations. Very good at researching.
+          Moreover, I have certain fascination for animations.
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias numquam amet provident debitis dicta accusamus dignissimos id enim omnis.</p>
+
         <p>
-         Currently I work remotely and I am open for new job opportunities.
+         Nevertheless, I study/work remotely and I am open for job opportunities.
         </p>
       </div>
     </section>
 
     <!-------GET IN TOUCH------------------ -->
     <Section id="in-touch">
-      <div>
-      <h2>Get in touch</h2>
-  <form action="">
-
-    <input
-      type="text"
-      id="fullname"
-      placeholder=" Name"
-      minlength="1"
-    />
-    <input type="text" placeholder=" Email" minlength="5" required />
-    <input type="text" placeholder=" Subject" minlength="5" />
-   
-    <textarea
-      id="question"
-      placeholder=" Send me a message!"
-      minlength="1"
-    ></textarea><br>
-    <button class="submit-btn">Send</button>
-  </form>
-</div>
+      <div id="dotted-border">
+        <h2>Get in touch</h2>
+        <form action="">
+          <div class="flex-form">
+            <i class="fa-regular fa-user"></i>
+            <input 
+            type="text"
+            name="full-name"
+            placeholder=" Enter your name"
+            minlength="1"
+            />
+          
+            <i class="fa-solid fa-at"></i>
+            <input 
+            type="email" 
+            name="email"
+            placeholder=" Enter your email" minlength="5" required />
+          </div>
+          <div class="flex-form" >
+            <i class="fa-regular fa-envelope"></i>
+            <textarea
+            placeholder=" Send me a message!"
+            minlength="1"
+            ></textarea>
+           </div>
+          <button class="submit-btn">Send</button>
+        </form>
+      </div>
     </Section>
     <!-- FOOTER -->
     <footer>
