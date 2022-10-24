@@ -128,7 +128,9 @@ main div button:hover {
   }
 }
 main .icon {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   justify-content: end;
   align-items: flex-end;
@@ -136,7 +138,7 @@ main .icon {
 main .icon i {
   color: #2d6877;
   font-size: 2rem;
-  margin: 0 2rem;
+  margin: 0 0.7rem;
 }
 main .icon a:hover i {
   color: #e4cd33;
@@ -306,7 +308,9 @@ main .icon a:hover i {
   list-style-type: none;
 }
 #my-skills .icon {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   justify-content: end;
   align-items: flex-end;
@@ -314,7 +318,7 @@ main .icon a:hover i {
 #my-skills .icon i {
   color: #2d6877;
   font-size: 2rem;
-  margin: 0 2rem;
+  margin: 0 0.7rem;
 }
 
 #about-me {
