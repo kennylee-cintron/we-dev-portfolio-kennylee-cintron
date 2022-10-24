@@ -12,6 +12,7 @@ body {
 
 header {
   background-color: #46ac92;
+  width: 100%;
 }
 header .nav-link {
   color: #f7f9fd;
@@ -272,6 +273,38 @@ main .icon a:hover i {
   font-size: 1.2rem;
   font-family: "Inter", sans-serif;
 }
+#my-skills h3 {
+  color: #dc5d96;
+  font-size: 1.5rem;
+  font-family: "Sansita", sans-serif;
+}
+#my-skills .skill-i::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+#my-skills .soft::before,
+#my-skills .technical::before,
+#my-skills .education::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  color: #2d6877;
+}
+#my-skills .technical::before {
+  content: "\f005";
+}
+#my-skills .education::before {
+  content: "\f07c";
+}
+#my-skills li {
+  color: rgb(92, 81, 81);
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  list-style-type: none;
+}
 #my-skills .icon {
   width: 100%;
   display: flex;
@@ -441,6 +474,11 @@ footer p {
 @media only screen and (min-width: 900px) {
   .container-pro .projects {
     width: 370px;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
   }
 }
 @media only screen and (min-width: 992px) {

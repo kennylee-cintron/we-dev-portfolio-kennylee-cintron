@@ -15,12 +15,14 @@
     padding: 0 0 $padding;
   }
   p {
-    color: $charcoal;
-    font-size: $p-size;
-    font-family: $p-font-family;
+    @include texts;
   }
 }
-
+@mixin texts {
+  color: $charcoal;
+  font-size: $p-size;
+  font-family: $p-font-family;
+}
 @mixin button {
   background-color: $pink;
   color: $yellow;
