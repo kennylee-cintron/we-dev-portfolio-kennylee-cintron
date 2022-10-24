@@ -136,7 +136,7 @@ main .icon {
 main .icon i {
   color: #2d6877;
   font-size: 2rem;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 main .icon a:hover i {
   color: #e4cd33;
@@ -314,7 +314,7 @@ main .icon a:hover i {
 #my-skills .icon i {
   color: #2d6877;
   font-size: 2rem;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
 #about-me {
